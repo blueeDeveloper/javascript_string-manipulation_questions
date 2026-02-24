@@ -103,8 +103,32 @@ console.log(result)
 ```
 
 4) Check if two strings are Anagrams.
+
+```
+const strictAnagram = (str1, str2) => {
+    if (str1.length !== str2.length) return false
+    let charMap = new Map()
+    for (let char of str1) {
+        charMap.set(char, (charMap.get(char) || 0) + 1)
+    }
+    
+    for(let char of str2) {
+        if (!charMap.has(char) || charMap.get(char) === 0) {
+            return false
+        }
+        charMap.set(char, charMap.get(char) - 1)
+    }
+    return true
+}
+console.log(strictAnagram("Node.js!", "!js.deNo")); // true
+```
+
    
 5) Count the occurrence of a specific character.
+
+three ways to do it. traditional for loop, using reduce and split trick
+
+
    
 6) Check if a string contains only digits.
    
