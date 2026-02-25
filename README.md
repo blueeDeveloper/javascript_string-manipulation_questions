@@ -128,6 +128,44 @@ console.log(strictAnagram("Node.js!", "!js.deNo")); // true
 
 three ways to do it. traditional for loop, using reduce and split trick
 
+Split Trick 
+```
+const charOccuranceCount = (str, charToCount) => {
+   let count = str.split(charToCount).length-1
+   return count
+}
+console.log(charOccuranceCount("Javascript is awesome", "a")); //Count-3
+```
+
+Traditional for loop
+
+```
+const charOccuranceCount = (str, charToCount) => {
+    let count = 0;
+   for (let char of str) {
+       if(char === charToCount) count ++
+   }
+   return count
+}
+console.log(charOccuranceCount("Javascript is awesome", "a")); //Count-3
+```
+
+Using Reduce - NOTE: we have to use ++acc here instead of acc++ otherwise acc++ will return its original value 0 
+
+```
+const charOccuranceCount = (str, charToCount) => {
+    let count = [...str].reduce((acc, currentChar) => {
+      return currentChar === charToCount ? ++acc: acc;  
+        
+    }, 0 );
+    
+    
+    return count
+}
+console.log(charOccuranceCount("Javascript is awesome", "a")); //Count-3
+```
+
+
 
    
 6) Check if a string contains only digits.
