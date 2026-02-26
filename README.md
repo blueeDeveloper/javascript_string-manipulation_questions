@@ -169,10 +169,69 @@ console.log(charOccuranceCount("Javascript is awesome", "a")); //Count-3
 
    
 6) Check if a string contains only digits.
+
+Regex approach
+
+```
+const isNumeric = (str) => /^-?\d*\.?\d+$/.test(str);
+```
+
+<img width="723" height="439" alt="Screenshot 2026-02-25 at 11 56 12 AM" src="https://github.com/user-attachments/assets/8dc6bc4a-a575-4e5f-9efa-0ea8af97e2c6" />
+
+
    
 7) Find the first repeated character in a string.
+
+There are two ways we can do this. Brute Force method and using Set
+
+Bruce Force Method
+
+```
+const findFirstRepeatedChar = (str) => {
+    for(let i=0; i < str.length; i++) {
+        for(let j=0; j <i; j++) {
+            if(str[i]=== str[j]) {
+                return str[i]
+            }
+        }
+    }
+    return null
+    
+}
+console.log(findFirstRepeatedChar("google")); // result- o
+```
+
+Using Set() 
+
+```
+const findFirstRepeatedChar = (str) => {
+    let currSet = new Set();
+    for (const char of str) {
+        if(currSet.has(char)) return char
+        else currSet.add(char);
+    }
+    return null
+    
+}
+console.log(findFirstRepeatedChar("google")); // result- o
+
+```
+
     
 8) Check if a string is a rotation of another string.
+
+```
+const isRotationManual = (str1, str2) => {
+   if(str1.length !== str2.length || str1.length === 0) return false
+   
+   const concatenatedStr = str1 + str1;
+   return concatenatedStr.includes(str2)
+    
+}
+console.log(isRotationManual("stack", "cksta")); // result- true
+```
+
+
     
 9) Find all permutations of a string.
     
