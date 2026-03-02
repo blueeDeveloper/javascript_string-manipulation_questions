@@ -238,6 +238,15 @@ console.log(isRotationManual("stack", "cksta")); // result- true
 10) Find all substrings of a string.
     
 11) Check if a string has all unique characters.
+
+```
+const hasAllUniqueChars = (str) => {
+   const charSet = new Set(str)
+   return charSet.size === str.length
+}
+console.log(hasAllUniqueChars("stack")); // result- true
+console.log(hasAllUniqueChars("google")); // result- true
+```
     
 12) Remove all whitespace from a string.
     
