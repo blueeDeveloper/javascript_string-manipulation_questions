@@ -249,6 +249,15 @@ console.log(hasAllUniqueChars("google")); // result- false
 ```
     
 12) Remove all whitespace from a string.
+
+```
+const removeWhiteSpaces = (str) => {
+  const strWithoutSpaces = str.replace(/\s+/g, '')
+  return strWithoutSpaces
+}
+
+console.log(removeWhiteSpaces("Hello, World!")); 
+```
     
 13) Replace a specific character with another.
     
