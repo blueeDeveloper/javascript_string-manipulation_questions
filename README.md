@@ -245,7 +245,7 @@ const hasAllUniqueChars = (str) => {
    return charSet.size === str.length
 }
 console.log(hasAllUniqueChars("stack")); // result- true
-console.log(hasAllUniqueChars("google")); // result- true
+console.log(hasAllUniqueChars("google")); // result- false
 ```
     
 12) Remove all whitespace from a string.
