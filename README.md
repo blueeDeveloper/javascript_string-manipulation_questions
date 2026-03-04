@@ -162,8 +162,6 @@ const charOccuranceCount = (str, charToCount) => {
 console.log(charOccuranceCount("Javascript is awesome", "a")); //Count-3
 ```
 
-
-
    
 6) Check if a string contains only digits.
 
@@ -175,8 +173,7 @@ const isNumeric = (str) => /^-?\d*\.?\d+$/.test(str);
 
 <img width="723" height="439" alt="Screenshot 2026-02-25 at 11 56 12 AM" src="https://github.com/user-attachments/assets/8dc6bc4a-a575-4e5f-9efa-0ea8af97e2c6" />
 
-
-   
+ 
 7) Find the first repeated character in a string.
 
 There are two ways we can do this. Brute Force method and using Set
@@ -255,7 +252,7 @@ const removeWhiteSpaces = (str) => {
 
 console.log(removeWhiteSpaces("Hello, World!")); 
 ```
-    
+
 13) Replace a specific character with another.
     
 14) Find the longest word in a sentence.
