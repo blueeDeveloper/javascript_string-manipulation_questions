@@ -1,7 +1,6 @@
 # Javascript String Manipulation Questions 
 
 1) Count vowels and consonants.
-
 ```
 const countVowelsConsonants = (str) => {
     const vowelCount = str.match(/[aeiou]/gi) || [];
@@ -19,7 +18,6 @@ console.log(res)
 /[aeiou]/gi: This is a Regular Expression.
 The g flag means "global" (find all matches, not just the first). The i flag means "insensitive" (match both 'A' and 'a') .match(): This returns an array of every character that fits the description.
 || []: This is a "short-circuit." If the string has zero vowels, .match() returns null. Adding || [] ensures we get an empty array instead, so that calling .length doesn't crash your code.
-
 
 ```
 const countVowelConsonants = (str) => {
@@ -44,7 +42,6 @@ const countVowelConsonants = (str) => {
 let res = countVowelConsonants('Hello World 2026!!!')
 console.log(res)
 ```
-
 
 
 2) Find the first non-repeated character.
