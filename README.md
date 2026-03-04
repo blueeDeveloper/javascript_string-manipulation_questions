@@ -262,3 +262,6 @@ console.log(removeWhiteSpaces("Hello, World!"));
 16) Count the number of words in a sentence.
     
 17) Reverse each word in a given sentence.
+
+
+
