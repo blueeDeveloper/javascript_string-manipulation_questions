@@ -254,6 +254,15 @@ console.log(removeWhiteSpaces("Hello, World!"));
 ```
 
 13) Replace a specific character with another.
+can be implemented in 3 ways - using replaceAll and replace and regular expressions
+```
+let text = "apple pie";
+let newText = text.replaceAll("p", "b"); //Result - "abble bie"
+let newText2 = text.replace("p", "b"); //Result - "abple pie"
+let newText3 = text.replace(/p/gi, 'b') //Result - "abble pie" 
+
+```
+
     
 14) Find the longest word in a sentence.
     
