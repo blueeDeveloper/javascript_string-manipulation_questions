@@ -254,6 +254,7 @@ console.log(removeWhiteSpaces("Hello, World!"));
 ```
 
 13) Replace a specific character with another.
+
 can be implemented in 3 ways - using replaceAll and replace and regular expressions
 ```
 let text = "apple pie";
