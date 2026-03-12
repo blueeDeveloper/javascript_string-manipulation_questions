@@ -261,7 +261,6 @@ let text = "apple pie";
 let newText = text.replaceAll("p", "b"); //Result - "abble bie"
 let newText2 = text.replace("p", "b"); //Result - "abple pie"
 let newText3 = text.replace(/p/gi, 'b') //Result - "abble pie" 
-
 ```
 
     
