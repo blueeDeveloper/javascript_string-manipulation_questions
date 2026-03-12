@@ -268,6 +268,25 @@ let newText3 = text.replace(/p/gi, 'b') //Result - "abble pie"
 14) Find the longest word in a sentence.
 Can be implemented in two ways, for of loop and reduce
 
+1. Using for...of loop
+
+```
+const findLongestWord = (str) => {
+  let words = str.split(" ");
+  let longestWord = "";
+  
+  for(let word of words) {
+    if(word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+  return longestWord;
+}
+
+
+console.log(findLongestWord("This is my time to shine")); //shine
+
+```
     
 15) Check if two strings are isomorphic.
 
