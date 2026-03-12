@@ -282,10 +282,7 @@ const findLongestWord = (str) => {
   }
   return longestWord;
 }
-
-
 console.log(findLongestWord("This is my time to shine")); //shine
-
 ```
     
 15) Check if two strings are isomorphic.
