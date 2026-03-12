@@ -266,6 +266,8 @@ let newText3 = text.replace(/p/gi, 'b') //Result - "abble pie"
 
     
 14) Find the longest word in a sentence.
+Can be implemented in two ways, for of loop and reduce
+
     
 15) Check if two strings are isomorphic.
 
