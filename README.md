@@ -283,6 +283,19 @@ const findLongestWord = (str) => {
 }
 console.log(findLongestWord("This is my time to shine")); //shine
 ```
+
+Using reduce 
+
+```
+const findLongestWord = (str) => {
+  return str.split(' ').reduce((longest, current) => {
+    return current.length > longest.length ? current : longest;
+  }, "");
+};
+
+const sentence = "The quick brown fox jumped over the lazy dog";
+console.log(findLongestWord(sentence)); // "jumped"
+```
     
 15) Check if two strings are isomorphic.
 
