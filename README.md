@@ -301,6 +301,7 @@ console.log(findLongestWord(sentence)); // "jumped"
 
 
 16) Count the number of words in a sentence.
+
     
 17) Reverse each word in a given sentence.
 
