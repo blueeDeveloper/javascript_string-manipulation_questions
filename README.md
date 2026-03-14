@@ -299,6 +299,7 @@ console.log(findLongestWord(sentence)); // "jumped"
     
 15) Check if two strings are isomorphic.
 
+
 16) Count the number of words in a sentence.
     
 17) Reverse each word in a given sentence.
