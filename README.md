@@ -318,5 +318,18 @@ console.log(countWords("\n Newline count"));   // 2
     
 17) Reverse each word in a given sentence.
 
+const reverseWords = (sentence) => {
+  return sentence
+    .split(' ') // Split sentence into words
+    .map(word => {
+      // Split word into chars, reverse them, join back to a word
+      return word.split('').reverse().join('');
+    })
+    .join(' '); // Join words back into a sentence
+};
+
+// Examples
+console.log(reverseWords("Hello World"));     // "olleH dlroW"
+console.log(reverseWords("JavaScript is fun")); // "tpircSavaJ si nuf"
 
 
