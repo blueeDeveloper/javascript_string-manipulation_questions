@@ -302,10 +302,8 @@ console.log(findLongestWord(sentence)); // "jumped"
 
 16) Count the number of words in a sentence.
 
+```
 const countWords = (str) => {
-  // 1. Trim leading/trailing whitespace
-  // 2. Split by any sequence of whitespace
-  // 3. Filter out any remaining empty strings (for empty input)
   const words = str.trim().split(/\s+/);
   
   return words[0] === '' ? 0 : words.length;
@@ -316,7 +314,7 @@ console.log(countWords("Hello world"));        // 2
 console.log(countWords("   Too   many   spaces ")); // 3
 console.log(countWords(""));                   // 0
 console.log(countWords("\n Newline count"));   // 2
-
+```
     
 17) Reverse each word in a given sentence.
 
