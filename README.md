@@ -63,6 +63,7 @@ let res2 = findNonRepeatedChar('aabbcc')
 console.log(res1, res2)
 ```
 
+
 ```
 const findNonRepeatedChar = (str) => {
     let result = str.split('').find(char => str.indexOf(char) === str.lastIndexOf(char)) || null;
@@ -87,6 +88,7 @@ let result = removeDuplicateChars('assq')
 console.log(result)
 ```
 
+
 without using Set
 ```
 const removeDuplicateChars = (str) => {
@@ -98,6 +100,7 @@ const removeDuplicateChars = (str) => {
 let result = removeDuplicateChars('aAAsssq')
 console.log(result)
 ```
+
 
 4) Check if two strings are Anagrams.
 
