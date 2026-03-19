@@ -1,4 +1,4 @@
-# Javascript String Manipulation Questions 
+# Javascript String Manipulation Questions.
 
 1) Count vowels and consonants.
 ```
